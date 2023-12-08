@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <title>Delevery</title>
   </head>
   <body>
@@ -22,6 +23,7 @@
         <img
           src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg"
           alt="nav logo"
+          class="nav-logo-anim"
         />
       </div>
       <div class="nav__items">
@@ -44,11 +46,11 @@
     <main>
       <div class="hero-section my-5">
         <div class="about-delevery__desc">
-          <h3 class="mt-5">ABOUT DELIVER X</h3>
-          <h1 class="my-5 my-md-3">
+          <h3 class="mt-5 about-first-move">ABOUT DELIVER X</h3>
+          <h1 class="my-5 my-md-3 about-second-move">
             We are here to help amazing restaurants get great customers
           </h1>
-          <p>
+          <p class="about-second-move">
             At morbi adipiscing sit sed consectetur senectus Dignissim sed amet
             tincidunt vitae ultricies ultrices amet fermentum amet neque et id
             sed lacinia massa pretium aliquam libero et.
@@ -56,32 +58,43 @@
         </div>
         <div class="abt-delivery__hero">
           <img
+            src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6201768e2b5f20a3847da6a8_image-1-card-about-hero-delivery-template.png"
+            alt="burga"
+            class="burga-img"
+          />
+          <img
             src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6201768f4ff084869c4a1c57_image-about-hero-delivery-template.png"
             alt=""
+            class="delevery__hero-img"
+          />
+          <img
+            src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/6201768ecbdabafa33e57a7c_image-2-card-about-hero-delivery-template.svg"
+            alt="delevery time img"
+            class="delevery-time-img"
           />
         </div>
       </div>
       <div class="delivery__rates">
         <div class="rates">
-          <ul>
+          <ul class="rate-first-move">
             <li>10M<span>+</span></li>
             <li>Happy customers</li>
           </ul>
         </div>
         <div class="rates">
-          <ul>
+          <ul class="rate-second-move">
             <li>500k<span>+</span></li>
             <li>Restaurants available</li>
           </ul>
         </div>
         <div class="rates">
-          <ul>
+          <ul class="rate-third-move">
             <li>30M<span>+</span></li>
             <li>Successful deliveries</li>
           </ul>
         </div>
         <div class="rates">
-          <ul>
+          <ul class="rate-forth-move">
             <li>99.9<span>%</span></li>
             <li>Customer satisfaction</li>
           </ul>
@@ -321,7 +334,9 @@
             </button>
           </div>
           <div>
-            <button class="btn ml-5 py-4 w-100 w-sm-100 btn-outline-custom-primary">
+            <button
+              class="btn ml-5 py-4 w-100 w-sm-100 btn-outline-custom-primary"
+            >
               <i class="fa fa-android"></i>
               Download for Android
             </button>
@@ -394,5 +409,51 @@
         - Powered by <a href="https://webflow.com/">Webflow</a>
       </p>
     </footer>
+    <script>
+      gsap.from(
+        ".nav-logo-anim, .nav__items>ul>li, .btn-outline-custom-primary, .btn-outline-custom-secondery",
+        { opacity: 0, duration: 0.5, y: -70 }
+      );
+      gsap.to(".about-first-move", { opacity: 1, duration: 1, y: -60 });
+
+      gsap.to(".about-second-move", {
+        opacity: 1,
+        duration: 1.5,
+        y: -50,
+      });
+
+      gsap.from(".delevery__hero-img", {
+        scale: 0,
+        duration: 2,
+        ease: "easeOut",
+      });
+
+      gsap.from(".burga-img, .delevery-time-img", {
+        scale: -1,
+        duration: 2.5,
+        ease: "easeOut",
+      });
+
+      gsap.to(".rate-first-move", {
+        duration: 0.5,
+        x: -50,
+        ease: "power2.inOut",
+      });
+      gsap.to(".rate-second-move", {
+        duration: 0.8,
+        x: -50,
+        ease: "power2.inOut",
+      });
+      gsap.to(".rate-third-move", {
+        duration: 1,
+        x: -50,
+        ease: "power2.inOut",
+      });
+      gsap.to(".rate-forth-move", {
+        duration: 1.3,
+        x: -50,
+        ease: "power2.inOut",
+      });
+    </script>
   </body>
 </html>

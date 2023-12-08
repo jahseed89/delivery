@@ -23,7 +23,7 @@ body main .press-news .press-news__header h1, body main .out-partners .our-partn
   font-weight: 700;
   line-height: 1.227em;
   color: #121212;
-  margin: 16px 0;
+  margin: 40px 0;
 }
 @media (max-width: 1300px) {
   body main .press-news .press-news__header h1, body main .out-partners .our-partners__header h1, body main .our-journey .our-journey__desc h1, body main .our-mission .our-mission__disc h1, body main .about-us .about-us__desc h1 {
@@ -35,7 +35,7 @@ body main .press-news .press-news__header h1, body main .out-partners .our-partn
   body main .press-news .press-news__header h1, body main .out-partners .our-partners__header h1, body main .our-journey .our-journey__desc h1, body main .our-mission .our-mission__disc h1, body main .about-us .about-us__desc h1 {
     font-size: 24px;
     line-height: 1.111em;
-    margin: 12px 0;
+    margin: 3rem 0;
   }
 }
 @media (max-width: 1000px) {
@@ -87,9 +87,6 @@ body nav {
   padding: 2rem 5rem;
   font-size: 16px;
   box-shadow: 0 3px 12px rgba(18, 18, 18, 0.06);
-  position: fixed;
-  width: 100%;
-  top: 0;
 }
 @media (max-width: 1000px) {
   body nav {
@@ -105,6 +102,13 @@ body nav .nav__items {
 @media (max-width: 1300px) {
   body nav .nav__items {
     min-width: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  body nav .nav__items {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 body nav .nav__items ul {
@@ -173,6 +177,7 @@ body main .hero-section {
 @media (max-width: 1000px) {
   body main .hero-section {
     flex-direction: column;
+    padding: 2rem;
   }
 }
 @media (max-width: 600px) {
@@ -222,6 +227,7 @@ body main .hero-section .about-delevery__desc h1 {
 }
 body main .hero-section .abt-delivery__hero {
   width: 40%;
+  position: relative;
 }
 @media (max-width: 1000px) {
   body main .hero-section .abt-delivery__hero {
@@ -233,12 +239,45 @@ body main .hero-section .abt-delivery__hero {
     width: 90%;
   }
 }
-body main .hero-section .abt-delivery__hero img {
+body main .hero-section .abt-delivery__hero .delevery__hero-img {
   width: 90%;
 }
 @media (max-width: 600px) {
-  body main .hero-section .abt-delivery__hero img {
+  body main .hero-section .abt-delivery__hero .delevery__hero-img {
     width: 100%;
+  }
+}
+body main .hero-section .abt-delivery__hero .burga-img, body main .hero-section .abt-delivery__hero .delevery-time-img {
+  box-shadow: 0 14px 42px 0 rgba(16, 16, 16, 0.14);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+}
+body main .hero-section .abt-delivery__hero .burga-img {
+  max-width: 45%;
+  top: 12rem;
+  left: -3rem;
+}
+@media (max-width: 1000px) {
+  body main .hero-section .abt-delivery__hero .burga-img {
+    top: 8rem;
+    left: -7rem;
+  }
+}
+body main .hero-section .abt-delivery__hero .delevery-time-img {
+  top: 25rem;
+  left: 14rem;
+}
+@media (max-width: 1000px) {
+  body main .hero-section .abt-delivery__hero .delevery-time-img {
+    max-width: 50%;
+    top: 12rem;
+  }
+}
+@media (max-width: 600px) {
+  body main .hero-section .abt-delivery__hero .delevery-time-img {
+    max-width: 50%;
+    top: 18rem;
   }
 }
 body main .delivery__rates {
