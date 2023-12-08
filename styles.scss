@@ -195,7 +195,7 @@ body {
         }
 
         @media (max-width: 600px) {
-          width: 80%;
+          width: 90%;
           margin: 0 auto;
         }
 
@@ -829,6 +829,14 @@ body {
         }
       }
 
+      @media (max-width: 600px) {
+        .availability, .availability-rest {
+          width: 90%;
+          margin: 0 auto;
+          padding: 0 1rem;
+        }
+      }
+
       .locations {
         display: flex;
         gap: 1rem;
@@ -839,7 +847,7 @@ body {
           border-radius: 20px;
 
           @media (max-width: 600px) {
-            width: 100px;
+            width: 80px;
           }
         }
       }

@@ -376,7 +376,7 @@
           </ul>
         </div>
         <div class="availability">
-          <h3>Available in</h3>
+          <h3 class="mt-5">Available in</h3>
           <div class="locations">
             <img
               src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba8182905a8fd1c_icon-1-service-available-delivery-template.svg"
@@ -415,81 +415,6 @@
         - Powered by <a href="https://webflow.com/">Webflow</a>
       </p>
     </footer>
-
-    <script>
-      gsap.registerPlugin(ScrollTrigger);
-
-      gsap.from(
-        ".nav-logo-anim, .nav__items>ul>li, .btn-outline-custom-primary, .btn-outline-custom-secondery",
-        {
-          opacity: 0,
-          duration: 0.5,
-          y: -70,
-          ScrollTrigger:
-            ".nav-logo-anim, .nav__items>ul>li, .btn-outline-custom-primary, .btn-outline-custom-secondery",
-        }
-      );
-
-      gsap.from(".anim1", { opacity: 0, duration: 1, y: -50, stagger: 0.6 });
-
-      gsap.from(".delevery__hero-img", {
-        scale: 0,
-        duration: 2,
-        ease: "easeOut",
-      });
-
-      gsap.from(".burga-img, .delevery-time-img", {
-        scale: -1,
-        duration: 2.5,
-        delay: 1.1,
-        ease: "easeOut",
-      });
-
-      gsap.from(".rates", {
-        opacity: 0,
-        duration: 1,
-        x: -50,
-        stagger: 0.6,
-        ScrollTrigger: ".rates",
-      });
-
-      gsap.from(".about-us__hero", {
-        scale: 0,
-        duration: 1,
-        ease: "easeOut",
-        ScrollTrigger: {
-          trigger: ".about-us__hero",
-        },
-      });
-
-      gsap.from(".our-mission__hero", {
-        scale: 0,
-        duration: 1,
-        ease: "easeOut",
-        ScrollTrigger: {
-          trigger: ".our-mission__hero",
-        },
-      });
-
-      gsap.from(".card", {
-        opacity: 0,
-        duration: 1,
-        y: -50,
-        stagger: 0.6,
-        ScrollTrigger: {
-          trigger: ".card",
-        },
-      });
-
-      gsap.from(".avata", { opacity: 0, duration: 1, stagger: 0.6 });
-
-      gsap.from(".press-news__card", { opacity: 0, duration: 1, delay: 1.1 });
-
-      gsap.from(".footer-menu, .utility, .availability, .availability-rest, ", {
-        opacity: 0,
-        duration: 1,
-        delay: 0.5,
-      });
-    </script>
+  <script src="./script.js"></script>
   </body>
 </html>

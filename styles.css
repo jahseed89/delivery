@@ -203,7 +203,7 @@ body main .hero-section .about-delevery__desc {
 }
 @media (max-width: 600px) {
   body main .hero-section .about-delevery__desc {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -782,6 +782,13 @@ body footer .footer__items ul a:hover {
   color: #121212;
   border-bottom: 3px solid #121212;
 }
+@media (max-width: 600px) {
+  body footer .footer__items .availability, body footer .footer__items .availability-rest {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
 body footer .footer__items .locations {
   display: flex;
   gap: 1rem;
@@ -793,7 +800,7 @@ body footer .footer__items .locations img {
 }
 @media (max-width: 600px) {
   body footer .footer__items .locations img {
-    width: 100px;
+    width: 80px;
   }
 }
 body footer .copyright {
