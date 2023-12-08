@@ -168,6 +168,7 @@ body {
       justify-content: space-between;
       padding: 2rem 5rem;
       background-color: $bg-color;
+     
 
       @media (max-width: 1000px) {
         flex-direction: column;
@@ -257,6 +258,10 @@ body {
             top: 8rem;
             left: -7rem;
           }
+          @media (max-width: 600px) {
+            top: 9rem;
+            left: -2rem;
+          }
         }
         .delevery-time-img {
           top: 25rem;
@@ -283,6 +288,11 @@ body {
 
       @media (max-width: 1000px) {
         padding: 0rem;
+      }
+
+      @media (max-width: 600px) {
+        flex-wrap: wrap;
+        padding-left: 3rem;
       }
 
       .rates {
@@ -773,6 +783,13 @@ body {
         flex-wrap: wrap;
       } 
 
+      .footer-menu {
+        display: flex;
+
+        .seperate-menu {
+          margin-top: 3rem;
+        }
+      }
 
       h3 {
         font-size: 18px;
@@ -820,6 +837,10 @@ body {
 
         img {
           border-radius: 20px;
+
+          @media (max-width: 600px) {
+            width: 100px;
+          }
         }
       }
 
@@ -827,7 +848,10 @@ body {
     .copyright {
       text-align: center;
       padding: 2rem 0;
-      @extend %desc-p;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.667em;
+      color: $smtxt-color;
 
       a {
         color: $primary-color;

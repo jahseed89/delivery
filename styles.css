@@ -44,7 +44,7 @@ body main .press-news .press-news__header h1, body main .out-partners .our-partn
   }
 }
 
-body footer .copyright, body footer .footer__items ul li, body footer .footer-nav .footer__logo p, body main .press-news .press-news__card-wrapper .press-news__card .press-news__card-footer p, body main .out-partners .our-partner__contents .partner-cart p, body main .out-partners .our-partners__header p, body main .our-journey .our-journey__desc p, body main .our-mission .our-mission__disc p, body main .about-us .about-us__desc p, body main .hero-section .about-delevery__desc p {
+body footer .footer__items ul li, body footer .footer-nav .footer__logo p, body main .press-news .press-news__card-wrapper .press-news__card .press-news__card-footer p, body main .out-partners .our-partner__contents .partner-cart p, body main .out-partners .our-partners__header p, body main .our-journey .our-journey__desc p, body main .our-mission .our-mission__disc p, body main .about-us .about-us__desc p, body main .hero-section .about-delevery__desc p {
   font-family: Metropolis, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -52,13 +52,13 @@ body footer .copyright, body footer .footer__items ul li, body footer .footer-na
   color: #656565;
 }
 @media (max-width: 1000px) {
-  body footer .copyright, body footer .footer__items ul li, body footer .footer-nav .footer__logo p, body main .press-news .press-news__card-wrapper .press-news__card .press-news__card-footer p, body main .out-partners .our-partner__contents .partner-cart p, body main .out-partners .our-partners__header p, body main .our-journey .our-journey__desc p, body main .our-mission .our-mission__disc p, body main .about-us .about-us__desc p, body main .hero-section .about-delevery__desc p {
+  body footer .footer__items ul li, body footer .footer-nav .footer__logo p, body main .press-news .press-news__card-wrapper .press-news__card .press-news__card-footer p, body main .out-partners .our-partner__contents .partner-cart p, body main .out-partners .our-partners__header p, body main .our-journey .our-journey__desc p, body main .our-mission .our-mission__disc p, body main .about-us .about-us__desc p, body main .hero-section .about-delevery__desc p {
     font-size: 14px;
     line-height: 1.111em;
   }
 }
 @media (max-width: 600px) {
-  body footer .copyright, body footer .footer__items ul li, body footer .footer-nav .footer__logo p, body main .press-news .press-news__card-wrapper .press-news__card .press-news__card-footer p, body main .out-partners .our-partner__contents .partner-cart p, body main .out-partners .our-partners__header p, body main .our-journey .our-journey__desc p, body main .our-mission .our-mission__disc p, body main .about-us .about-us__desc p, body main .hero-section .about-delevery__desc p {
+  body footer .footer__items ul li, body footer .footer-nav .footer__logo p, body main .press-news .press-news__card-wrapper .press-news__card .press-news__card-footer p, body main .out-partners .our-partner__contents .partner-cart p, body main .out-partners .our-partners__header p, body main .our-journey .our-journey__desc p, body main .our-mission .our-mission__disc p, body main .about-us .about-us__desc p, body main .hero-section .about-delevery__desc p {
     font-size: 14px;
     line-height: 1.001em;
   }
@@ -264,6 +264,12 @@ body main .hero-section .abt-delivery__hero .burga-img {
     left: -7rem;
   }
 }
+@media (max-width: 600px) {
+  body main .hero-section .abt-delivery__hero .burga-img {
+    top: 9rem;
+    left: -2rem;
+  }
+}
 body main .hero-section .abt-delivery__hero .delevery-time-img {
   top: 25rem;
   left: 14rem;
@@ -289,6 +295,12 @@ body main .delivery__rates {
 @media (max-width: 1000px) {
   body main .delivery__rates {
     padding: 0rem;
+  }
+}
+@media (max-width: 600px) {
+  body main .delivery__rates {
+    flex-wrap: wrap;
+    padding-left: 3rem;
   }
 }
 body main .delivery__rates .rates ul li {
@@ -733,6 +745,12 @@ body footer .footer__items {
     flex-wrap: wrap;
   }
 }
+body footer .footer__items .footer-menu {
+  display: flex;
+}
+body footer .footer__items .footer-menu .seperate-menu {
+  margin-top: 3rem;
+}
 body footer .footer__items h3 {
   font-size: 18px;
   line-height: 1.1em;
@@ -773,9 +791,18 @@ body footer .footer__items .locations {
 body footer .footer__items .locations img {
   border-radius: 20px;
 }
+@media (max-width: 600px) {
+  body footer .footer__items .locations img {
+    width: 100px;
+  }
+}
 body footer .copyright {
   text-align: center;
   padding: 2rem 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+  color: #656565;
 }
 body footer .copyright a {
   color: #ff5634;

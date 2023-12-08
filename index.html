@@ -13,8 +13,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <title>Delevery</title>
   </head>
   <body>
@@ -46,11 +47,11 @@
     <main>
       <div class="hero-section my-5">
         <div class="about-delevery__desc">
-          <h3 class="mt-5 about-first-move">ABOUT DELIVER X</h3>
-          <h1 class="my-5 my-md-3 about-second-move">
+          <h3 class="mt-5 anim1">ABOUT DELIVER X</h3>
+          <h1 class="my-5 my-md-3 anim1">
             We are here to help amazing restaurants get great customers
           </h1>
-          <p class="about-second-move">
+          <p class="anim1">
             At morbi adipiscing sit sed consectetur senectus Dignissim sed amet
             tincidunt vitae ultricies ultrices amet fermentum amet neque et id
             sed lacinia massa pretium aliquam libero et.
@@ -212,6 +213,7 @@
             <img
               src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017b070212f9403ca3a97f_image-1-partners-delivery-template.svg"
               alt="custormer avatar"
+              class="avata"
             />
             <h2>Customers</h2>
             <p>
@@ -223,6 +225,7 @@
             <img
               src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017b07238dadda77c03341_image-2-partners-delivery-template.svg"
               alt="custormer avatar"
+              class="avata"
             />
             <h2>Restaurants</h2>
             <p>
@@ -234,6 +237,7 @@
             <img
               src="https://assets-global.website-files.com/61fd4a65725a5325e9bb25c2/62017b075b917b7d28e88cc8_image-3-partners-delivery-template.svg"
               alt="custormer avatar"
+              class="avata"
             />
             <h2>Riders</h2>
             <p>
@@ -344,7 +348,7 @@
         </div>
       </div>
       <div class="footer__items">
-        <div class="menu">
+        <div class="footer-menu">
           <ul>
             <h3>Menu</h3>
             <li>Home</li>
@@ -352,6 +356,8 @@
             <li>Contact</li>
             <li>Blog</li>
             <li>Blog posts</li>
+          </ul>
+          <ul class="seperate-menu">
             <li>Plans</li>
             <li>Plan single</li>
             <li>Register</li>
@@ -409,18 +415,22 @@
         - Powered by <a href="https://webflow.com/">Webflow</a>
       </p>
     </footer>
+
     <script>
+      gsap.registerPlugin(ScrollTrigger);
+
       gsap.from(
         ".nav-logo-anim, .nav__items>ul>li, .btn-outline-custom-primary, .btn-outline-custom-secondery",
-        { opacity: 0, duration: 0.5, y: -70 }
+        {
+          opacity: 0,
+          duration: 0.5,
+          y: -70,
+          ScrollTrigger:
+            ".nav-logo-anim, .nav__items>ul>li, .btn-outline-custom-primary, .btn-outline-custom-secondery",
+        }
       );
-      gsap.to(".about-first-move", { opacity: 1, duration: 1, y: -60 });
 
-      gsap.to(".about-second-move", {
-        opacity: 1,
-        duration: 1.5,
-        y: -50,
-      });
+      gsap.from(".anim1", { opacity: 0, duration: 1, y: -50, stagger: 0.6 });
 
       gsap.from(".delevery__hero-img", {
         scale: 0,
@@ -431,28 +441,54 @@
       gsap.from(".burga-img, .delevery-time-img", {
         scale: -1,
         duration: 2.5,
+        delay: 1.1,
         ease: "easeOut",
       });
 
-      gsap.to(".rate-first-move", {
-        duration: 0.5,
-        x: -50,
-        ease: "power2.inOut",
-      });
-      gsap.to(".rate-second-move", {
-        duration: 0.8,
-        x: -50,
-        ease: "power2.inOut",
-      });
-      gsap.to(".rate-third-move", {
+      gsap.from(".rates", {
+        opacity: 0,
         duration: 1,
         x: -50,
-        ease: "power2.inOut",
+        stagger: 0.6,
+        ScrollTrigger: ".rates",
       });
-      gsap.to(".rate-forth-move", {
-        duration: 1.3,
-        x: -50,
-        ease: "power2.inOut",
+
+      gsap.from(".about-us__hero", {
+        scale: 0,
+        duration: 1,
+        ease: "easeOut",
+        ScrollTrigger: {
+          trigger: ".about-us__hero",
+        },
+      });
+
+      gsap.from(".our-mission__hero", {
+        scale: 0,
+        duration: 1,
+        ease: "easeOut",
+        ScrollTrigger: {
+          trigger: ".our-mission__hero",
+        },
+      });
+
+      gsap.from(".card", {
+        opacity: 0,
+        duration: 1,
+        y: -50,
+        stagger: 0.6,
+        ScrollTrigger: {
+          trigger: ".card",
+        },
+      });
+
+      gsap.from(".avata", { opacity: 0, duration: 1, stagger: 0.6 });
+
+      gsap.from(".press-news__card", { opacity: 0, duration: 1, delay: 1.1 });
+
+      gsap.from(".footer-menu, .utility, .availability, .availability-rest, ", {
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
       });
     </script>
   </body>
