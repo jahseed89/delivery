@@ -16,7 +16,7 @@ $bg-color: #fafafa;
     line-height: 1.111em;
   }
   @media (max-width: 600px) {
-    font-size: 10px;
+    font-size: 16px;
     line-height: 1.001em;
   }
 }
@@ -84,6 +84,11 @@ body {
     background-color: #fff;
     padding: 2rem 5rem;
     font-size: 16px;
+    box-shadow: 0 3px 12px rgba(18, 18, 18, .06);
+    // position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
 
     @media (max-width: 1000px) {
       padding: 2rem 1rem;
@@ -127,6 +132,10 @@ body {
           &:hover {
             background-color: $primary-color;
             color: #fff;
+          }
+
+          @media (max-width: 600px) {
+            width: 100%;
           }
         }
       }
@@ -180,7 +189,8 @@ body {
         }
 
         @media (max-width: 600px) {
-          width: 100%;
+          width: 80%;
+          margin: 0 auto;
         }
 
         h3 {
@@ -198,7 +208,7 @@ body {
             margin-bottom: 12px;
           }
           @media (max-width: 600px) {
-            font-size: 22px;
+            font-size: 24px;
           }
           
         }
@@ -213,10 +223,16 @@ body {
         @media (max-width: 1000px) {
           margin: 0 auto;
         }
+        @media (max-width: 600px) {
+          width: 90%;
+        }
 
         img {
-          width: 100%;
+          width: 90%;
 
+          @media (max-width: 600px) {
+            width: 100%;
+          }
         }
       }
     }
@@ -290,6 +306,11 @@ body {
         @media (max-width: 1000px) {
           margin: 1rem auto;
         } 
+
+        @media (max-width: 600px) {
+          width: 90%;
+          margin: 0 auto;
+        } 
   
         img {
           width: 100%;
@@ -302,6 +323,11 @@ body {
 
         @media (max-width: 1000px) {
           width: 50%;
+          margin: 0 auto;
+        } 
+
+        @media (max-width: 600px) {
+          width: 90%;
           margin: 0 auto;
         } 
   
@@ -340,6 +366,12 @@ body {
           margin: 1rem auto;
         } 
 
+        @media (max-width: 600px) {
+          width: 100%;
+          margin: 0 auto;
+          padding: 1rem;
+        } 
+
         h3 {
           @extend %desc-h3;
         }
@@ -358,6 +390,11 @@ body {
         @media (max-width: 1000px) {
           margin: 1rem auto;
         } 
+
+        @media (max-width: 600px) {
+          width: 90%;
+          margin: 0 auto;
+        } 
         img {
           width: 100%;
           border-radius: 20px;
@@ -370,7 +407,7 @@ body {
       justify-content: space-between;
       background-color: $bg-color;
       padding: 8rem 5rem;
-      border: 1px solid red;
+      // border: 1px solid red;
 
       @media (max-width: 1000px) {
         flex-direction: column;
@@ -383,6 +420,10 @@ body {
         @media (max-width: 1000px) {
           width: 50%;
           margin: 3rem auto;
+        } 
+        @media (max-width: 600px) {
+          width: 90%;
+          margin: 1rem auto;
         } 
 
         h3 {
@@ -409,6 +450,11 @@ body {
           margin: 0 auto;
         } 
 
+        @media (max-width: 600px) {
+          width: 90%;
+          margin: 1rem auto;
+        } 
+
         .card {
           background-color: #fff;
           border-radius: 24px;
@@ -419,11 +465,16 @@ body {
           overflow: hidden;
           opacity: 1;
 
+          @media (max-width: 600px) {
+            padding: 1rem;
+          }
+
           h3 {
             font-size: 22px;
             font-weight: 700;
             line-height: 1.273em;
             color: $primary-color;
+
           }
           h2 {
             font-size: 24px;
@@ -431,6 +482,11 @@ body {
             line-height: 1.417em;
             color: $dark-color;
             padding-bottom: 1rem;
+
+            @media (max-width: 600px) {
+              font-size: 16px;
+              line-height: 1.111em;
+            }
           }
           p {
             font-family: Metropolis, sans-serif;
@@ -446,6 +502,10 @@ body {
       background-color: #fff;
       padding: 8rem 5rem;
 
+      @media (max-width: 600px) {
+        padding: 1rem 0;
+      }
+
       .our-partners__header {
         width: 50%;
         text-align: center;
@@ -453,6 +513,10 @@ body {
 
         @media (max-width: 1300px) {
           min-width: 80%;
+        }
+        @media (max-width: 600px) {
+          width: 90%;
+          margin: 1rem auto;
         }
         h3 {
           @extend %desc-h3;
@@ -473,6 +537,11 @@ body {
           flex-direction: column;
         } 
 
+        @media (max-width: 600px) {
+          width: 90%;
+          margin: 1rem auto;
+        }
+
         .partner-cart {
           text-align: center;
           width: 30%;
@@ -480,6 +549,11 @@ body {
           @media (max-width: 1000px) {
             width: 50%;
             margin: 2rem auto;
+          } 
+
+          @media (max-width: 600px) {
+            width: 90%;
+            margin: 1rem auto;
           } 
 
           h2 {
@@ -499,6 +573,11 @@ body {
       background-color: $bg-color;
       padding: 8rem 5rem;
 
+      @media (max-width: 600px) {
+        padding: 1rem 0;
+        margin-top: 1rem;
+      }
+
       .press-news__header {
         width: 50%;
         text-align: center;
@@ -506,6 +585,10 @@ body {
 
         @media (max-width: 1300px) {
           min-width: 70%;
+        }
+        @media (max-width: 600px) {
+          width: 50%;
+          margin: 1rem auto;
         }
         h3 {
           @extend %desc-h3;
@@ -525,6 +608,9 @@ body {
           flex-direction: column;
           gap: 0;
         } 
+        @media (max-width: 600px) {
+          margin: 0;
+        } 
 
         .press-news__card {
           background-color: #fff;
@@ -535,9 +621,19 @@ body {
           overflow: hidden;
           width: 45%;
 
+          @media (max-width: 600px) {
+            padding: 3rem 1rem;
+
+          }
+
           @media (max-width: 1000px) {
             width: 50%;
             margin: 3rem auto;
+          } 
+
+          @media (max-width: 600px) {
+            width: 90%;
+            margin: 1rem auto;
           } 
 
         h2 {
@@ -546,6 +642,12 @@ body {
           line-height: 1.429em;
           color: $dark-color;
           margin: 1.5rem 0;
+
+          @media (max-width: 600px) {
+            font-size: 20px;
+            line-height: 1.111em;
+            margin: 1.5rem 0;
+          } 
         }
 
         .press-news__card-footer {
@@ -596,6 +698,10 @@ body {
       .footer__logo {
         width: 35%;
 
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+
         p {
           @extend %desc-p;
           padding-top: 1rem;
@@ -611,6 +717,9 @@ body {
           width: 100%;
           justify-content: unset;
           gap: 1.5rem;
+        } 
+        @media (max-width: 600px) {
+          flex-direction: column;
         } 
       }
     }

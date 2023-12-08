@@ -13,7 +13,7 @@ body main .press-news .press-news__header h3, body main .out-partners .our-partn
 }
 @media (max-width: 600px) {
   body main .press-news .press-news__header h3, body main .out-partners .our-partners__header h3, body main .our-journey .our-journey__desc h3, body main .our-mission .our-mission__disc h3, body main .about-us .about-us__desc h3, body main .hero-section .about-delevery__desc h3 {
-    font-size: 10px;
+    font-size: 16px;
     line-height: 1.001em;
   }
 }
@@ -86,6 +86,10 @@ body nav {
   background-color: #fff;
   padding: 2rem 5rem;
   font-size: 16px;
+  box-shadow: 0 3px 12px rgba(18, 18, 18, 0.06);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 @media (max-width: 1000px) {
   body nav {
@@ -133,6 +137,11 @@ body nav .nav__items ul .btn-outline-custom-secondery {
 body nav .nav__items ul .btn-outline-custom-secondery:hover {
   background-color: #ff5634;
   color: #fff;
+}
+@media (max-width: 600px) {
+  body nav .nav__items ul .btn-outline-custom-secondery {
+    width: 100%;
+  }
 }
 body nav .nav__items .menu {
   display: none;
@@ -189,7 +198,8 @@ body main .hero-section .about-delevery__desc {
 }
 @media (max-width: 600px) {
   body main .hero-section .about-delevery__desc {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 body main .hero-section .about-delevery__desc h1 {
@@ -207,7 +217,7 @@ body main .hero-section .about-delevery__desc h1 {
 }
 @media (max-width: 600px) {
   body main .hero-section .about-delevery__desc h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 body main .hero-section .abt-delivery__hero {
@@ -218,8 +228,18 @@ body main .hero-section .abt-delivery__hero {
     margin: 0 auto;
   }
 }
+@media (max-width: 600px) {
+  body main .hero-section .abt-delivery__hero {
+    width: 90%;
+  }
+}
 body main .hero-section .abt-delivery__hero img {
-  width: 100%;
+  width: 90%;
+}
+@media (max-width: 600px) {
+  body main .hero-section .abt-delivery__hero img {
+    width: 100%;
+  }
 }
 body main .delivery__rates {
   display: flex;
@@ -290,6 +310,12 @@ body main .about-us .about-us__hero {
     margin: 1rem auto;
   }
 }
+@media (max-width: 600px) {
+  body main .about-us .about-us__hero {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 body main .about-us .about-us__hero img {
   width: 100%;
   border-radius: 20px;
@@ -301,6 +327,12 @@ body main .about-us .about-us__desc {
 @media (max-width: 1000px) {
   body main .about-us .about-us__desc {
     width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  body main .about-us .about-us__desc {
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -326,12 +358,25 @@ body main .our-mission .our-mission__disc {
     margin: 1rem auto;
   }
 }
+@media (max-width: 600px) {
+  body main .our-mission .our-mission__disc {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
 body main .our-mission .our-mission__hero {
   width: 50%;
 }
 @media (max-width: 1000px) {
   body main .our-mission .our-mission__hero {
     margin: 1rem auto;
+  }
+}
+@media (max-width: 600px) {
+  body main .our-mission .our-mission__hero {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 body main .our-mission .our-mission__hero img {
@@ -343,7 +388,6 @@ body main .our-journey {
   justify-content: space-between;
   background-color: #fafafa;
   padding: 8rem 5rem;
-  border: 1px solid red;
 }
 @media (max-width: 1000px) {
   body main .our-journey {
@@ -360,6 +404,12 @@ body main .our-journey .our-journey__desc {
     margin: 3rem auto;
   }
 }
+@media (max-width: 600px) {
+  body main .our-journey .our-journey__desc {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
 body main .our-journey .our-journey__cards {
   width: 48%;
   display: flex;
@@ -373,6 +423,12 @@ body main .our-journey .our-journey__cards {
     margin: 0 auto;
   }
 }
+@media (max-width: 600px) {
+  body main .our-journey .our-journey__cards {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
 body main .our-journey .our-journey__cards .card {
   background-color: #fff;
   border-radius: 24px;
@@ -382,6 +438,11 @@ body main .our-journey .our-journey__cards .card {
   box-shadow: 0 2px 12px 0 rgba(16, 16, 16, 0.08);
   overflow: hidden;
   opacity: 1;
+}
+@media (max-width: 600px) {
+  body main .our-journey .our-journey__cards .card {
+    padding: 1rem;
+  }
 }
 body main .our-journey .our-journey__cards .card h3 {
   font-size: 22px;
@@ -396,6 +457,12 @@ body main .our-journey .our-journey__cards .card h2 {
   color: #121212;
   padding-bottom: 1rem;
 }
+@media (max-width: 600px) {
+  body main .our-journey .our-journey__cards .card h2 {
+    font-size: 16px;
+    line-height: 1.111em;
+  }
+}
 body main .our-journey .our-journey__cards .card p {
   font-family: Metropolis, sans-serif;
   font-size: 18px;
@@ -407,6 +474,11 @@ body main .out-partners {
   background-color: #fff;
   padding: 8rem 5rem;
 }
+@media (max-width: 600px) {
+  body main .out-partners {
+    padding: 1rem 0;
+  }
+}
 body main .out-partners .our-partners__header {
   width: 50%;
   text-align: center;
@@ -415,6 +487,12 @@ body main .out-partners .our-partners__header {
 @media (max-width: 1300px) {
   body main .out-partners .our-partners__header {
     min-width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  body main .out-partners .our-partners__header {
+    width: 90%;
+    margin: 1rem auto;
   }
 }
 body main .out-partners .our-partner__contents {
@@ -427,6 +505,12 @@ body main .out-partners .our-partner__contents {
     flex-direction: column;
   }
 }
+@media (max-width: 600px) {
+  body main .out-partners .our-partner__contents {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
 body main .out-partners .our-partner__contents .partner-cart {
   text-align: center;
   width: 30%;
@@ -435,6 +519,12 @@ body main .out-partners .our-partner__contents .partner-cart {
   body main .out-partners .our-partner__contents .partner-cart {
     width: 50%;
     margin: 2rem auto;
+  }
+}
+@media (max-width: 600px) {
+  body main .out-partners .our-partner__contents .partner-cart {
+    width: 90%;
+    margin: 1rem auto;
   }
 }
 body main .out-partners .our-partner__contents .partner-cart h2 {
@@ -448,6 +538,12 @@ body main .press-news {
   background-color: #fafafa;
   padding: 8rem 5rem;
 }
+@media (max-width: 600px) {
+  body main .press-news {
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+}
 body main .press-news .press-news__header {
   width: 50%;
   text-align: center;
@@ -456,6 +552,12 @@ body main .press-news .press-news__header {
 @media (max-width: 1300px) {
   body main .press-news .press-news__header {
     min-width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  body main .press-news .press-news__header {
+    width: 50%;
+    margin: 1rem auto;
   }
 }
 body main .press-news .press-news__card-wrapper {
@@ -470,6 +572,11 @@ body main .press-news .press-news__card-wrapper {
     gap: 0;
   }
 }
+@media (max-width: 600px) {
+  body main .press-news .press-news__card-wrapper {
+    margin: 0;
+  }
+}
 body main .press-news .press-news__card-wrapper .press-news__card {
   background-color: #fff;
   border-radius: 24px;
@@ -479,10 +586,21 @@ body main .press-news .press-news__card-wrapper .press-news__card {
   overflow: hidden;
   width: 45%;
 }
+@media (max-width: 600px) {
+  body main .press-news .press-news__card-wrapper .press-news__card {
+    padding: 3rem 1rem;
+  }
+}
 @media (max-width: 1000px) {
   body main .press-news .press-news__card-wrapper .press-news__card {
     width: 50%;
     margin: 3rem auto;
+  }
+}
+@media (max-width: 600px) {
+  body main .press-news .press-news__card-wrapper .press-news__card {
+    width: 90%;
+    margin: 1rem auto;
   }
 }
 body main .press-news .press-news__card-wrapper .press-news__card h2 {
@@ -491,6 +609,13 @@ body main .press-news .press-news__card-wrapper .press-news__card h2 {
   line-height: 1.429em;
   color: #121212;
   margin: 1.5rem 0;
+}
+@media (max-width: 600px) {
+  body main .press-news .press-news__card-wrapper .press-news__card h2 {
+    font-size: 20px;
+    line-height: 1.111em;
+    margin: 1.5rem 0;
+  }
 }
 body main .press-news .press-news__card-wrapper .press-news__card .press-news__card-footer {
   display: flex;
@@ -531,6 +656,11 @@ body footer .footer-nav {
 body footer .footer-nav .footer__logo {
   width: 35%;
 }
+@media (max-width: 600px) {
+  body footer .footer-nav .footer__logo {
+    width: 100%;
+  }
+}
 body footer .footer-nav .footer__logo p {
   padding-top: 1rem;
 }
@@ -544,6 +674,11 @@ body footer .footer-nav .footer__btns {
     width: 100%;
     justify-content: unset;
     gap: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  body footer .footer-nav .footer__btns {
+    flex-direction: column;
   }
 }
 body footer .footer__items {
