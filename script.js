@@ -20,9 +20,9 @@ gsap.from(".delevery__hero-img", {
 });
 
 gsap.from(".burga-img, .delevery-time-img", {
-  scale: -1,
+  scale: 0,
   duration: 2.5,
-  delay: 1.1,
+  delay: 1.0,
   ease: "easeOut",
 });
 
