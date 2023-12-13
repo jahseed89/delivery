@@ -71,3 +71,15 @@ gsap.from(".footer-menu, .utility, .availability, .availability-rest, ", {
   duration: 1,
   delay: 0.5,
 });
+
+
+
+
+
+function incrementSpan() {
+    let counter = parseInt(document.getElementById('counter').innerText)
+    counter++
+    document.getElementById('counter').innerText = counter;
+}
+
+

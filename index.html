@@ -29,7 +29,8 @@
       </div>
       <div class="nav__items">
         <ul>
-          <li>Home</li>
+          <!-- <li>Home</li> -->
+          <a href="./home.html">Home</a>
           <li>About</li>
           <li>Pricing</li>
           <li>Pages</li>
@@ -77,13 +78,13 @@
       </div>
       <div class="delivery__rates">
         <div class="rates">
-          <ul class="rate-first-move">
+          <ul>
             <li>10M<span>+</span></li>
             <li>Happy customers</li>
           </ul>
         </div>
         <div class="rates">
-          <ul class="rate-second-move">
+          <ul>
             <li>500k<span>+</span></li>
             <li>Restaurants available</li>
           </ul>
@@ -95,7 +96,7 @@
           </ul>
         </div>
         <div class="rates">
-          <ul class="rate-forth-move">
+          <ul>
             <li>99.9<span>%</span></li>
             <li>Customer satisfaction</li>
           </ul>
@@ -332,9 +333,12 @@
         </div>
         <div class="footer__btns">
           <div>
-            <button class="btn py-4 w-100 w-sm-100 btn-outline-custom-primary">
+            <button
+              class="btn py-4 w-100 w-sm-100 btn-outline-custom-primary"
+              onclick="incrementSpan()"
+            >
               <i class="fa fa-apple"></i>
-              Download for iOS
+              Download for iOS <span id="counter">1</span>
             </button>
           </div>
           <div>
@@ -415,6 +419,7 @@
         - Powered by <a href="https://webflow.com/">Webflow</a>
       </p>
     </footer>
-  <script src="./script.js"></script>
+    <script src="./script.js"></script>
+    
   </body>
 </html>
